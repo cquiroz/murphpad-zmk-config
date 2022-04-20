@@ -12,7 +12,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - board: nice_nano
+          - board: nice_nano@2
             shield: murphpad
     steps:
       - name: Checkout
