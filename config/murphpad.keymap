@@ -15,7 +15,6 @@
 #define DEFAULT 0
 #define FN      1
 
-
 &encoder_1 {
 	status = "okay";
 };
