@@ -16,6 +16,9 @@
 #define DEFAULT 0
 #define FN      1
 
+#define LEFT_HYPER LS(LC(LA(LGUI)))
+#define LH(key) LS(LC(LA(LG(key))))
+
 &encoder_1 {
     status = "okay";
 };
@@ -72,12 +75,12 @@
         fn_layer {
         label = "rgb";
             bindings = <
-                            &out OUT_TOG     &bt BT_PRV       &bt BT_NXT       &trans
-                            &trans           &trans           &trans           &trans
-                            &rgb_ug RGB_HUD  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &trans
+                                &out OUT_TOG     &bt BT_PRV       &bt BT_NXT       &trans
+                                &trans           &trans           &trans           &trans
+                                &rgb_ug RGB_HUD  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &trans
                 &bt BT_CLR_ALL  &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans
-                &trans      &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_BRI  &trans
-                &kp DEL     &rgb_ug RGB_SAD  &kp A            &rgb_ug RGB_SAI  &trans
+                &trans          &kp LH(J)  &rgb_ug RGB_SPD  &rgb_ug RGB_BRI  &trans
+                &kp DEL         &kp LEFT_HYPER  &kp KP_COMMA     &rgb_ug RGB_SAI  &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
