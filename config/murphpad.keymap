@@ -61,14 +61,14 @@
         default_layer {
         label = "numpad";
             bindings = <
-                            &kp UP       &kp F6          &kp F3            &kp BSPC
-                            &kp DOWN     &kp LEFT        &kp RIGHT         &kp KP_EQUAL
+                            &kp ESC      &kp F6          &kp KP_EQUAL      &kp BSPC
+                            &kp UP       &kp DOWN        &kp LEFT          &kp RIGHT
                             &kp KP_N7    &kp KP_N8       &kp KP_N9         &kp KP_DIVIDE
-                &kp C_MUTE  &kp KP_N4    &kp KP_N5       &kp KP_N6         &kp KP_MULTIPLY
-                &mo FN      &kp KP_N1    &kp KP_N2       &kp KP_N3         &kp KP_MINUS
+                &kp LH(Q)   &kp KP_N4    &kp KP_N5       &kp KP_N6         &kp KP_MULTIPLY
+                &tog FN     &kp KP_N1    &kp KP_N2       &kp KP_N3         &kp KP_MINUS
                 &kp BSPC    &kp KP_N0    &kp KP_DOT      &kp KP_ENTER      &kp KP_PLUS
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LH(K) LH(J)>;
 
         };
 
